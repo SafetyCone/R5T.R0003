@@ -1,0 +1,18 @@
+﻿@*
+    A basic component.
+    This component has some complications, but none that should be considered "complex". It has:
+        * A code-behind file (with XML documentation comment)
+        * Complex C# (the nameof() operator)
+        * Parameters.
+*@
+
+@namespace R5T.R0003
+
+
+<p>Hello from @nameof(Component02)!</p>
+<p>Value: @this.Value</p>
+
+@code {
+    [Parameter]
+    public string Value { get; set; }
+}

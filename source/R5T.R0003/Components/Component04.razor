@@ -1,0 +1,25 @@
+﻿@*
+    A useful component from here: https://stackoverflow.com/a/66110767/10658484
+*@
+
+@namespace R5T.R0003
+
+
+<h3>@Data.Title</h3>
+
+Hello, @Data.FirstName @Data.LastName!
+
+@code {
+
+    [Parameter]
+    public Test Data { get; set; }
+
+    public class Test
+    {
+        public string Title { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+    }
+}
